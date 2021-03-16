@@ -25,7 +25,7 @@
         }
 
         form{
-            width: 250px;
+            width: 300px;
             margin: 0 auto;
         }
 
@@ -44,21 +44,27 @@
     <div class="container">
         <form action="">
             <input id="url" type="text" >
+            <input id="color" type="color">
             <input id="btn" type="button" value="Generar">
         </form>
     </div>
 
     <script>
-        const button = document.getElementById('btn').onclick = ()=>{
-            const input = document.getElementById('url');
 
+
+        const button = document.getElementById('btn').onclick = ()=>{
+            
+            document.getElementById('code').innerHTML='';
+
+            const input = document.getElementById('url');
+            const color = document.getElementById('color');
             console.log(input.value);
 
             let qrcode = new QRCode("code", {
             text: url,
             width: 200,
             height: 200,
-            colorDark : "#000000",
+            colorDark : color.value,
             colorLight : "#ffffff",
             correctLevel : QRCode.CorrectLevel.H
             });
