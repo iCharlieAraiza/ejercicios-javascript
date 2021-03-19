@@ -2,6 +2,6 @@
 
 Prácticas y ejecicios de JavaScript
 
-- [] Ejercicios básicos
-- [] Programación asíncrona
-- [] Consumo de servicios RESTful
+- [ ] Ejercicios básicos
+- [ ] Programación asíncrona
+- [ ] Consumo de servicios RESTful
