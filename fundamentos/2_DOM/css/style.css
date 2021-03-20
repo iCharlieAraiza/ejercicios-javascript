@@ -1,0 +1,41 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to top left, #28b4a6, #6fd572);        }
+  h1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    line-height: 1.3;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    color: white;
+  }
+
+  .btn #boton{
+
+    padding: 10px 2rem;
+    margin: 0 auto;
+    display: block;
+    font-size: 14px;
+    background-color: #ff9900;
+    color: #ffffff;
+    border: 3px solid #595959;
+  }
+
+  .btn input:hover{
+    background-color: #005eff;
+  }
+
+  .btn input:focus{
+    outline: none;
+  }
+
+
+  .form-group input{
+    width: 300px;
+    padding: 5px;
+    display: block;
+    margin: 2rem auto
+  }

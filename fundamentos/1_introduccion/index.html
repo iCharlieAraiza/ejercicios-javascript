@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          background: linear-gradient(to top left, #b48928, #d56f6f);        }
+        h1 {
+          font-family: sans-serif;
+          font-size: 50px;
+          line-height: 1.3;
+          width: 100%;
+          padding: 30px;
+          text-align: center;
+          color: white;
+        }
+      </style>
+
+
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Hola!!</h1>
+
+
+<script>
+
+    //Hola mundo
+
+    // alert('Hola mundo!');
+
+    // console.log('Hola mundo');
+
+    // let saludo = 'hola!';
+
+    // let edad = 30;
+
+    // console.log(saludo);
+
+
+    // Declaración de variables
+
+    // var saludo = 'Hola, qué tal!!';
+
+    // console.log(saludo);
+
+    // let saludo = 'hola';
+
+    // if(true){
+    //     let saludo = 'qué onda';
+    // }
+
+    // console.log(saludo);
+
+
+    // const h1 = document.querySelector('h1');
+
+    // h1.innerText = 'Se ha cambiado el valor';
+
+
+</script>
+
+
+<script>
+
+   //Introducción
+
+//    const resultado = '9' == 9 ? true : false;
+
+//     if(resultado){
+//         console.log('Es verdadero');
+//     }  else{
+//         console.log('Es falso');
+//     }
+
+//     const resultadoB = '9' === 9 ? true : false;
+
+//     if(resultadoB){
+//         console.log('Es verdadero');
+//     }else{
+//         console.log('Es falso');
+//     }
+
+</script>
+
+<script>
+
+    // Arrays y colecciones
+
+    // const numeros = [1, 3, 4, 5 , 9, 0];
+    // const numeros2 = new Array(3, 5, 0, 99, 29);
+
+    // for(let i = 0; i<numeros2.length; i++){
+    //     console.log(`${i}- ${numeros2[i]}`);
+    // }
+
+
+    // const nombre = ['Carlos', 'María', 'Juan'];
+
+    // let i = 0;
+
+    // nombre.forEach(e=>console.log(`${i++} - ${e}`));
+
+
+
+
+
+
+
+    //Arreglos mixtos
+
+    // const mixto = ['Carlos', 10, null, {a: 2, b: 8}, new Date() ];
+
+    // let activo = true;
+
+    // while(activo){
+    //     for(let el in mixto){
+    //         console.clear(`${mixto[el]}`);
+    //     }
+    //     activo = false;
+    // }
+
+
+
+
+
+
+    //Arrays con for Each
+    // const numeros = new Array(5);
+
+    // numeros[2] = 4;
+    // numeros[3] = new Date();
+    // numeros[1] = 3.14;
+
+    // numeros.forEach(e => console.log(`${e} - ${numeros[e]}`) );
+
+    // for(let i = 0; i < numeros.length; i++){
+    //     console.log(`${i}- ${numeros[i]}`);
+    // }
+
+
+
+
+
+
+    //Agregar nuevos valores al array
+
+    // const persona = ['Carlos', 28, true];
+
+    // persona.push('Araiza');
+
+    // let i = 0;
+    // while(i<persona.length){
+    //     console.log(persona[i++]);
+    // }
+
+    // persona.pop();
+
+    // for(let i in persona){
+    //     console.log(persona[i]);
+    // }
+
+</script>
+
+<script>
+    //Estructura de objetos
+
+    // const persona = {
+    //     nombre: 'Carlos',
+    //     apellido: 'Araiza',
+    //     edad: 28,
+    //     estatus: true,
+    //     saludo: function(){
+    //         alert('¡Hola, tú!')
+    //     }
+    // }
+
+    // console.log(persona);
+
+    // persona.nombre = 'Juan Carlos';
+
+    // console.log(persona);
+
+    //persona.saludo();
+
+
+</script>
+
+<script>
+    
+    // function saludo( nombre ){
+    //     return `Hola ${nombre}`;
+    // }
+
+    // function saludo( nombre, apellido ){
+    //     return `Hola ${nombre} ${apellido}`;
+    // }
+
+    // console.log( saludo('Carlos', 'Araiza') );
+
+
+
+    // const area = lado => lado * lado;
+    // const areaRectangulo = (base, altura) => base * altura;
+
+
+    // console.log(area(5));
+
+
+
+    //***************************************
+    //      Programación funcional: Adios principios SOLID
+    //***************************************
+    
+    // const circulo = (radio)=> {
+    //     return radio*radio*Math.PI;
+    // }
+
+    // const rectangulo = (base, altura) =>{
+    //     return base * altura;
+    // }
+
+    // const resultado = (area)=>{
+    //     console.log(`El resultado del área es: ${area}`)
+    // }  
+
+    // resultado( circulo(4.3) );
+
+
+
+
+    //Progrmaión funcional
+
+    // const saludo = (el)=>{
+    //     el('Carlos')
+    // }
+
+    // saludo((nombre)=>{
+    //     console.log(`Hola ${nombre}!`);
+    // })
+
+    //----------
+
+    // const area = (figura) =>{
+    //     let lado = 10;
+    //     figura(lado);    
+    // }
+
+    // area( (el)=>{
+    //     console.log(el * el)
+    // })
+
+</script>
+
+
+<script>
+
+    //**************************************
+    //      Persona
+    //**************************************
+
+
+    // function Persona(nombre, edad, estatus){
+    //     this.nombre = nombre;
+    //     this.edad = edad;
+    //     this.estatus = estatus;
+
+    //     this.toString = ()=>{
+    //         return `Nombre: ${this.nombre} \nEdad: ${this.edad}\nEstatus: ${this.estatus}`;
+    //     }
+    // }
+
+
+    // const carlos = new Persona("Carlos", 28, true);
+
+    // console.log(carlos.nombre)
+
+    // const {nombre, edad, estatus} = {...carlos};
+
+    // console.log( carlos.toString() )
+
+
+
+
+    // class Persona{
+    //     constructor(nombre, edad, estatus){
+    //         this.nombre = nombre;
+    //         this.edad = edad;
+    //         this.estatus = estatus;
+    //     }
+
+    //     toJson(){
+    //         return `{
+    //             nombre: ${this.nombre}, 
+    //             edad: ${this.edad}, 
+    //             estatus: ${this.estatus} 
+    //         }`;
+    //     }
+
+    // }
+
+
+    // const carlos = new Persona('Carlos', 28, true);
+
+    // console.log( carlos.toJson() );
+    
+
+</script>
+
+</body>
+</html>
